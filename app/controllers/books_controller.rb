@@ -12,7 +12,7 @@ class BooksController < ApplicationController
     if @book.save 
       #show画面にリダイレクト（仮にindex）
       flash[:notice] = 'Book was successfully created.'
-      redirect_to '/books'
+      redirect_to book_path(@book.id) 
     else 
       @books = Book.all.order(id: :asc)
       render :index
