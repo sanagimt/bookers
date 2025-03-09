@@ -11,6 +11,7 @@ class BooksController < ApplicationController
     #データベースに保存
     if @book.save 
       #show画面にリダイレクト（仮にindex）
+      flash[:notice] = 'Book was successfully created.'
       redirect_to '/books'
     else 
       @books = Book.all.order(id: :asc)
@@ -29,6 +30,7 @@ class BooksController < ApplicationController
   def update
     @book = Book.find(params[:id])
     if @book.update(book_params)
+      flash[:notice] = 'Book was successfully created.'
       redirect_to book_path(@book.id) 
     else
       render :edit
