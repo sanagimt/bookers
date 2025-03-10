@@ -1,4 +1,4 @@
-<h1 class="index-header">Books</h1>
+<h1 class="header">Books</h1>
 <table>
   <thead>
     <tr>
@@ -31,15 +31,15 @@
 <% end %>
 
 <%= form_with model: @book, url: '/books', method: :post do |f| %>  
-  <div class= "new-field">
+  <div class= "field">
     <p>Title</p>
       <%= f.text_field :title %>
   </div>
-  <div class= "new-field">
+  <div class= "field">
     <p>Body</p>
       <%= f.text_area :body %>
   </div>
-  <div class= "new-field">
+  <div class= "field">
     <%= f.submit 'Create Book'%>
   </div>
 <% end %>

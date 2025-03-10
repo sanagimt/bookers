@@ -28,8 +28,7 @@ main {
     color: #333
 }
 
-.top-header,
-.index-header {
+.header {
     margin: 17px auto;
 }
 
@@ -50,6 +49,6 @@ table>tbody>tr>td {
     margin: 16px auto;
 }
 
-.new-field {
+.field {
     margin-bottom: 10px;
 }
