@@ -20,16 +20,17 @@
     box-sizing: border-box;
 }
 
+.flash-message.notice {
+    color: green;
+    margin: 33px;
+}
+
 main {
     font-family: verdana, arial, helvetica,sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin: 33px;
     color: #333
-}
-
-.flash-message.notice {
-    color: green;
 }
 
 .header {
@@ -68,3 +69,32 @@ table>tbody>tr>td {
 .button {
     padding: 1px 6px;
 }
+
+.error-explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+.error-explanation h2 {
+    text-align: left;
+    font-size: 12px;
+    padding: 5px 5px 5px 15px;
+    margin: -7px;
+    margin-bottom: 0;
+    background-color: #c00;
+    color: #fff;
+}
+
+.error-explanation ul {
+    margin: 33px;
+    padding-inline-start: 40px;
+}
+
+.error {
+    border: 2px solid red;
+    padding: 10px;
+  }

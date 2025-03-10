@@ -6,11 +6,8 @@ class BooksController < ApplicationController
   end
 
   def create
-    #データを受け取り新規登録
     @book = Book.new(book_params)
-    #データベースに保存
     if @book.save 
-      #show画面にリダイレクト
       flash[:notice] = 'Book was successfully created.'
       redirect_to book_path(@book.id) 
     else 
@@ -30,7 +27,7 @@ class BooksController < ApplicationController
   def update
     @book = Book.find(params[:id])
     if @book.update(book_params)
-      flash[:notice] = 'Book was successfully created.'
+      flash[:notice] = 'Book was successfully updated.'
       redirect_to book_path(@book.id) 
     else
       render :edit
