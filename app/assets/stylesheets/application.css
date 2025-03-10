@@ -33,7 +33,7 @@ main {
 }
 
 .text p,
-.text a  {
+.text a {
     margin: 33px;
 }
 
@@ -51,4 +51,16 @@ table>tbody>tr>td {
 
 .field {
     margin-bottom: 10px;
+}
+
+.title-field {
+    padding: 1px 2px;
+}
+
+.body-area {
+    padding: 2px;
+}
+
+.button {
+    padding: 1px 6px;
 }
