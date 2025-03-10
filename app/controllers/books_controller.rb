@@ -10,7 +10,7 @@ class BooksController < ApplicationController
     @book = Book.new(book_params)
     #データベースに保存
     if @book.save 
-      #show画面にリダイレクト（仮にindex）
+      #show画面にリダイレクト
       flash[:notice] = 'Book was successfully created.'
       redirect_to book_path(@book.id) 
     else 
