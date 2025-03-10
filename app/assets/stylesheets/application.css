@@ -32,8 +32,8 @@ main {
     margin: 17px auto;
 }
 
-.top-message p,
-.top-message a {
+.text p,
+.text a  {
     margin: 33px;
 }
 
