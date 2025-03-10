@@ -25,14 +25,31 @@ main {
     font-size: 13px;
     line-height: 18px;
     margin: 33px;
-    display: block;
+    color: #333
 }
 
-.top-header {
+.top-header,
+.index-header {
     margin: 17px auto;
 }
 
 .top-message p,
 .top-message a {
     margin: 33px;
+}
+
+table>thead>tr>th {
+    padding: 1px 1px 5px;
+}
+
+table>tbody>tr>td {
+    padding: 1px 5px 7px;
+}
+
+.new-header {
+    margin: 16px auto;
+}
+
+.new-field {
+    margin-bottom: 10px;
 }
