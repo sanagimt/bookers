@@ -28,6 +28,10 @@ main {
     color: #333
 }
 
+.flash-message.notice {
+    color: green;
+}
+
 .header {
     margin: 17px auto;
 }
